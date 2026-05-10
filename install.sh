@@ -6,7 +6,7 @@ if [[ "${EUID:-$(id -u)}" -ne 0 ]]; then
 fi
 
 apt update
-apt install -y vim curl wget python3.10-venv python3.12-venv
+apt install -y vim curl wget python3-venv
 
 readonly GADS_URL="https://github.com/benalonthomas/temp/releases/latest/download/gads.tar.gz"
 readonly GADS_ARCHIVE="/www/gads.tar.gz"

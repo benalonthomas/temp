@@ -94,7 +94,15 @@ EOF
     nginx -s reload
 }
 
+setup_ufw(){
+    systemctl restart ufw
+    ufw allow 80/tcp
+    ufw allow 443/tcp
+    ufw allow 5000/tcp
+}
+
 install_nginx
 create_www_layout
 install_gads
 install_gads_web
+setup_ufw

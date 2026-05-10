@@ -34,7 +34,7 @@ install_nginx() {
 create_www_layout(){
     mkdir -p /www \
              /www/wwwroot \
-             /www/ssh \
+             /www/ssl \
              /www/logs
 }
 
